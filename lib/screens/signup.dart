@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:easy_earn_app/screens/otppg.dart';
 import 'package:easy_earn_app/screens/palatte.dart';
+import 'package:easy_earn_app/screens/widgets/bottomnavbar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -102,6 +103,9 @@ class SignUpPg extends StatelessWidget {
                   ],
                 ),
               ),
+              TextButton(onPressed: (){
+                Get.to(()=>BottomNavBar());
+              }, child: Text('skip'))
             ],
           ),
         ),

@@ -1,10 +1,8 @@
 import 'dart:ui';
 import 'package:get/get.dart';
-import 'package:easy_earn_app/screens/loginpage.dart';
 import 'package:easy_earn_app/screens/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'widgets/backgroundimg.dart';
 import 'palatte.dart';
 
 class WelcomePg extends StatelessWidget {
@@ -18,9 +16,9 @@ class WelcomePg extends StatelessWidget {
       splitScreenMode: true,
       child: Stack(
         children: [
-          BackgroundImage(),
+        //  BackgroundImage(),
           Scaffold(
-              backgroundColor: Colors.transparent,
+              backgroundColor: Color(-15726816),
               // backgroundColor: Color(0xFF100720),
               body: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -31,23 +29,24 @@ class WelcomePg extends StatelessWidget {
                   RichText(
                     text: TextSpan(
                         style: TextStyle(
-                          fontSize: 20,
+                          fontWeight: FontWeight.w100,
+                          fontSize: 16,
                           color: Colors.white,
                         ),
                         children: [
                           TextSpan(
                             text: 'Welcome to',
-                            style: TextStyle(letterSpacing: 8.0),
+                            style: TextStyle(letterSpacing: 4.0,),
                           ),
                           TextSpan(
                             text: ' THE',
-                            style: TextStyle(letterSpacing: 8.0),
+                            style: TextStyle(letterSpacing: 4.0),
                           ),
                         ]),
                   ),
                   Container(
-                    height: 50,
-                      width: 250,
+                    height: 70,
+                      width: 240,
                       child: Image.asset('assets/updates/stepitup.png')),
                   // RichText(
                   //   text: TextSpan(
@@ -71,8 +70,11 @@ class WelcomePg extends StatelessWidget {
                   //     ],
                   //   ),
                   // ),
-                  SizedBox(
-                    height: 200,
+                  Container(
+                    margin: EdgeInsets.only(top: 40,bottom: 70),
+                    width: 480,
+                    height: 150,
+                    child: Image.asset('assets/imgs/shoes.png'),
                   ),
                   Container(
                       width: 400,
@@ -81,18 +83,18 @@ class WelcomePg extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
-                          ElevatedButton(
-                            onPressed: () {
-                              Get.to(() => const LoginPg());
-                            },
-                            child: Text('LOGIN'),
-                            style: kbtn,
-                          ),
+                          // ElevatedButton(
+                          //   onPressed: () {
+                          //     Get.to(() => const LoginPg());
+                          //   },
+                          //   child: Text('LOGIN'),
+                          //   style: kbtn,
+                          // ),
                           ElevatedButton(
                             onPressed: () {
                               Get.to(() => const SignUpPg());
                             },
-                            child: Text('REGISTER'),
+                            child: Text('LOGIN'),
                             style: kbtn,
                           ),
                         ],

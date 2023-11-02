@@ -2,9 +2,14 @@ import 'package:easy_earn_app/screens/palatte.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class OtpPg extends StatelessWidget {
+class OtpPg extends StatefulWidget {
   const OtpPg({super.key});
 
+  @override
+  State<OtpPg> createState() => _OtpPgState();
+}
+
+class _OtpPgState extends State<OtpPg> {
   @override
   Widget build(BuildContext context) {
     return Form(
@@ -63,8 +68,10 @@ class OtpPg extends StatelessWidget {
                             width: 55,
                             child: TextFormField(
                               decoration: InputDecoration(
+                                filled: true,
+                                fillColor: Colors.white,
                                 hintText: '0',
-                                hintStyle: TextStyle(color: Colors.white),
+                                hintStyle: TextStyle(color: Colors.grey),
                                 border: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(12)),
                               ),
@@ -74,8 +81,10 @@ class OtpPg extends StatelessWidget {
                                 }
                               },
                               textAlign: TextAlign.center,
-                              style:
-                                  TextStyle(color: Colors.white, fontSize: 20),
+                              style: TextStyle(
+                                  color: Color(-381003),
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w800),
                               keyboardType: TextInputType.number,
                               inputFormatters: [
                                 LengthLimitingTextInputFormatter(1),
@@ -89,8 +98,10 @@ class OtpPg extends StatelessWidget {
                             child: TextFormField(
                               textAlign: TextAlign.center,
                               decoration: InputDecoration(
+                                filled: true,
+                                fillColor: Colors.white,
                                 hintText: '0',
-                                hintStyle: TextStyle(color: Colors.white),
+                                hintStyle: TextStyle(color: Colors.grey),
                                 border: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(12)),
                               ),
@@ -99,8 +110,10 @@ class OtpPg extends StatelessWidget {
                                   FocusScope.of(context).nextFocus();
                                 }
                               },
-                              style:
-                                  TextStyle(color: Colors.white, fontSize: 20),
+                              style: TextStyle(
+                                  color: Color(-381003),
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w800),
                               keyboardType: TextInputType.number,
                               inputFormatters: [
                                 LengthLimitingTextInputFormatter(1),
@@ -114,8 +127,10 @@ class OtpPg extends StatelessWidget {
                             child: TextFormField(
                               textAlign: TextAlign.center,
                               decoration: InputDecoration(
+                                filled: true,
+                                fillColor: Colors.white,
                                 hintText: '0',
-                                hintStyle: TextStyle(color: Colors.white),
+                                hintStyle: TextStyle(color: Colors.grey),
                                 border: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(12)),
                               ),
@@ -124,8 +139,10 @@ class OtpPg extends StatelessWidget {
                                   FocusScope.of(context).nextFocus();
                                 }
                               },
-                              style:
-                                  TextStyle(color: Colors.white, fontSize: 20),
+                              style: TextStyle(
+                                  color: Color(-381003),
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w800),
                               keyboardType: TextInputType.number,
                               inputFormatters: [
                                 LengthLimitingTextInputFormatter(1),
@@ -136,20 +153,24 @@ class OtpPg extends StatelessWidget {
                           SizedBox(
                             height: 80,
                             width: 55,
-                            child: TextField(
+                            child: TextFormField(
                               onChanged: (value) {
                                 FocusScope.of(context)
                                     .requestFocus(FocusNode());
                               },
                               textAlign: TextAlign.center,
                               decoration: InputDecoration(
+                                filled: true,
+                                fillColor: Colors.white,
                                 hintText: '0',
-                                hintStyle: TextStyle(color: Colors.white),
+                                hintStyle: TextStyle(color: Colors.grey),
                                 border: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(12)),
                               ),
-                              style:
-                                  TextStyle(color: Colors.white, fontSize: 20),
+                              style: TextStyle(
+                                  color: Color(-381003),
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w800),
                               keyboardType: TextInputType.number,
                               inputFormatters: [
                                 LengthLimitingTextInputFormatter(1),

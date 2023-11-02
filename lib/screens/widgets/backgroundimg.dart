@@ -7,14 +7,18 @@ class BackgroundImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          image: const AssetImage('assets/imgs/brush.png'),
-          fit: BoxFit.cover,
-          colorFilter: ColorFilter.mode(
-            Color(0xFF100720),
-            BlendMode.dstOver,
+    return Center(
+      child: Container(
+        height: 150,
+        width: 480,
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: const AssetImage('assets/imgs/shoes.png'),
+            fit: BoxFit.cover,
+            colorFilter: ColorFilter.mode(
+              Color(0xFF100720),
+              BlendMode.dstOver,
+            ),
           ),
         ),
       ),
